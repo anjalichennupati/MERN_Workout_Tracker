@@ -1,0 +1,602 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px 10px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+}
+.workout-details span.cl2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+
+
+nav span{
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;               /* Enables flexbox layout */
+  align-items: center;         /* Vertically aligns the items */
+  gap: 10px;                   /* Adds space between elements */
+}
+
+.search-link {
+  display: inline-flex;        /* Ensures the icon and text stay in the same line */
+  align-items: center;         /* Vertically centers the icon and text */
+}
+
+.search-icon {
+  margin-right: 8px;           /* Adds space between the icon and the text */
+  font-size: 24px;             /* Adjusts the size of the icon */
+}
+
+
+/* auth forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+form{
+  margin-top:100px;
+  margin-right: 100px;
+}
+
+
+h2.fitnessh{
+
+  align-items: center;
+  justify-content: center;
+
+}
+form.fitness{
+
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+
+}
+
+/* General Reset */
+
+/* Header */
+
+
+
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, #34495e, #2c3e50);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c0392b;
+}
+
+/* Features Section */
+.features {
+  background-color: #ecf0f1;
+  padding: 4rem 1rem;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.about {
+  padding: 4rem 1rem;
+  background-color: #bdc3c7;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+/* Bootstrap */
+
+.btn-primary {
+  background-color: #ff5733; /* Custom color */
+}
+
+nav .search .material-symbols-outlined{
+  margin-top: 5px;
+}
+
+.workout-info {
+  display: flex;
+  align-items: center;        /* Aligns icon and text vertically */
+  gap: 8px;                   /* Adds space between icon and text */
+}
+
+.material-symbols-outlined {
+  font-size: 24px;            /* Adjusts icon size */
+  margin-right: 5px;          /* Adds space between icon and text (if needed) */
+}
+
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  appearance: none; /* Hides the default dropdown arrow for consistency across browsers */
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+h2.fitnessh{
+
+    text-align: center;
+  
+}
+
+/* Container styling */
+.trainer-selection-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading styling */
+.trainer-selection-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Dropdown styling */
+.trainer-selection-dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Hover and focus effects for the dropdown */
+.trainer-selection-dropdown:hover {
+  border-color: #007bff;
+}
+
+.trainer-selection-dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Option styling */
+option {
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+
+/* search */
+
+.exercise-search-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+.title1 {
+  font-size: 2.5rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  font-size: 1rem;
+  padding: 10px;
+  width: 70%;
+  max-width: 500px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.search-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Loading and Error Text */
+.loading-text {
+  font-size: 1rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.error-text {
+  font-size: 1rem;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+/* Exercise List */
+.exercise-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exercise-item {
+  text-align: left;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.exercise-item strong {
+  color: #333333;
+}
+
+@media (max-width: 600px) {
+  .search-input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+}
+
+/* #nav bar  */
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+ 
+
+  padding: 10px 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown .dropbtn:hover {
+  background-color: #575757;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content .link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  display: block;
+}
+
+.dropdown .dropdown-content .link:hover {
+  background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Icon Styling */
+.search-icon {
+  font-size: 18px;
+  vertical-align: middle;
+
+  cursor: pointer;
+
+}
+
+.search-icon:hover {
+  color: #ddd;
+}
+
+
+
+
+/* Calorie */
+
+/* Calories List */
+.calories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calories-item {
+  text-align: left;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.calories-item h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.calories-item p {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.calories-item strong {
+  color: #333333;
+}
+
+@media (max-width: 600px) {
+  .calories-item h3 {
+    font-size: 1rem;
+  }
+
+  .calories-item p {
+    font-size: 0.9rem;
+  }
+
+  .calories-item {
+    padding: 10px;
+  }
+}
